@@ -1,0 +1,100 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 1.25rem;
+  color: black; }
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1); }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+a:hover {
+  text-decoration: underline;
+  color: red; }
+
+.header {
+  font-size: 1.5rem; }
+
+.calendario {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .calendario .tituloCalendario {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 1.25rem;
+    text-align: center; }
+  .calendario .slideHorizontal {
+    display: block;
+    width: 100%;
+    overflow-x: scroll;
+    padding: 10px; }
+    .calendario .slideHorizontal .slideContainer {
+      display: block;
+      white-space: nowrap; }
+      .calendario .slideHorizontal .slideContainer .item {
+        display: inline-block;
+        margin: 5px; }
+        .calendario .slideHorizontal .slideContainer .item img {
+          width: 150px;
+          height: 225px;
+          object-fit: cover; }
+  .calendario .slideHorizontal::-webkit-scrollbar {
+    display: none; }
+
+.articulos {
+  margin: 40px; }
+  .articulos .card {
+    padding: 0px; }
+  .articulos .tituloArticulos {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 1.25rem;
+    text-align: center;
+    color: black; }
+
+.footer {
+  background-color: #f8f9fa; }
+  .footer .footerTexto {
+    font-size: 1.5rem; }
+
+.iframe-16-9 {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+  height: 0;
+  overflow: hidden; }
+  .iframe-16-9 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.textoAvances {
+  margin: 4px; }
+
+.suscripcion {
+  margin: 40px; }
+  .suscripcion .contenedor {
+    background-color: #f8f9fa; }
+  .suscripcion .tituloSuscripcion {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 1.25rem;
+    text-align: center;
+    color: black; }
+
+.noticia {
+  margin: 20px; }
