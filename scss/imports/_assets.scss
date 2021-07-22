@@ -1,0 +1,28 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: $tamañoLetra;
+  color: $colorLetra;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+a {
+  text-decoration: none;
+  color: $colorLetra;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: red;
+}

@@ -1,0 +1,15 @@
+.articulos {
+  margin: 40px;
+
+  .card {
+    padding: 0px;
+  }
+
+  .tituloArticulos {
+    font-size: $tamañoLetraTitulos;
+    text-transform: uppercase;
+    margin: 1.25rem;
+    text-align: center;
+    color: black;
+  }
+}

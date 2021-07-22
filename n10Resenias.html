@@ -5,14 +5,23 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Noticias Kumara: Una pagina especializada en noticias de videojuegos, hardware, reseñas de nuevos perifericos y avances y trailers de los ultimos juegos lanzados. Además, ofrecemos suscripciones a nuestros lectores para que esten al día en todo lo relacionado al mundo gamer.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="stilesFinalNoticias.css" />
+  <title>Noticias Kumara: Noticias de videojuegos, hardware, reseñas y avances.</title>
+</head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="css/proyectoFinal3.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>Noticias Kumara: Noticias de videojuegos, hardware, reseñas y avances.</title>
 </head>
 
@@ -24,7 +33,7 @@
           <img
             src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggc3R5bGU9ImZpbGw6I0RDNDY1NTsiIGQ9Ik0yMTUuOTIsMjcyLjAzMWMtNDQuMjcyLDAtODAuMTYxLDM1Ljg4OS04MC4xNjEsODAuMTYxdjEyLjAyNGMwLDI4Ljc3Ny0yMy4zMjgsNTIuMTA1LTUyLjEwNSw1Mi4xMDUNCglzLTUyLjEwNS0yMy4zMjgtNTIuMTA1LTUyLjEwNXYxMi4wMjRjMCwzOS44NDUsMzIuMyw3Mi4xNDUsNzIuMTQ1LDcyLjE0NXM3Mi4xNDUtMzIuMyw3Mi4xNDUtNzIuMTQ1DQoJYzAtMjIuMTM2LDE3Ljk0NC00MC4wODEsNDAuMDgxLTQwLjA4MUgyNTZWMjcyLjAzaC00MC4wOFYyNzIuMDMxeiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6I0U2NjQ2RTsiIGQ9Ik00ODguNDY4LDE1OS44MDZoLTE2LjAzMmwtNi42NC02LjY0MWMtNi4wMTMtNi4wMTMtMTQuMTY4LTkuMzkxLTIyLjY3Mi05LjM5MWgtOTIuMDk4bDI1LjIxNywzMi4wNjUNCgl2ODAuMTZjMCw4Ljg1NC03LjE3OCwxNi4wMzItMTYuMDMyLDE2LjAzMmgtODkuNjc3Yy0yMi41NDMsMC00Mi4wNjEsMTUuNjU3LTQ2Ljk1MSwzNy42NjJsLTIzLjY5NSwxMDYuNjI4bDI2LjA3LTE1LjY0Mw0KCWM5LjE1MS01LjQ5MSwxNi41NDYtMTMuNDc3LDIxLjMxOS0yMy4wMjJsMTMuMDA2LTI2LjAxMmw2MC4zMzQsMjUuNzA0YzEwLjI0OSw0LjU1NSwyMS4zNCw2LjkwOSwzMi41NTYsNi45MDloNTUuMTM0bDE1LjE0OS0xMC44MjENCgljMjQuMDQ3LTE3LjE3NywzMy4yNDMtNDguNTYzLDIyLjI2OC03Ni4wMDFsLTIwLjYwNi01MS41MTRjLTQuMjEyLTEwLjUzMSwzLjU0My0yMS45ODYsMTQuODg1LTIxLjk4NmgwLjM2OHYtMTYuMDMyDQoJYzAtOC44NTQsNy4xNzgtMTYuMDMyLDE2LjAzMi0xNi4wMzJINTA0LjV2LTE2LjAzMkM1MDQuNSwxNjYuOTg0LDQ5Ny4zMjIsMTU5LjgwNiw0ODguNDY4LDE1OS44MDZ6Ii8+DQo8cGF0aCBzdHlsZT0iZmlsbDojQkU0MTUwOyIgZD0iTTM2Mi43NDksMzIwLjk3NWwtMTE2LjY3My0zOC44OTFjLTE5LjU4NC02LjUyOC0zNi41NDgtMTkuMTgyLTQ4LjM4Ni0zNi4wOTRsLTM3Ljg4NC01NC4xMg0KCWwxNjAuMzIzLDU2LjExM2w4MC4xNjEsNjQuMTI5bDAsMEMzOTAuNDY1LDMyMS45MzgsMzc1LjkzMSwzMjUuMzY5LDM2Mi43NDksMzIwLjk3NXoiLz4NCjxnPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiNEQzQ2NTU7IiBkPSJNMTk2LjMwMiw0MDkuMTUxbDAuMDIxLTAuMTAyQzE5NS44OTYsNDA5LjIyMiwxOTUuMzg4LDQwOS40NjQsMTk2LjMwMiw0MDkuMTUxeiIvPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiNEQzQ2NTU7IiBkPSJNMzUyLjE5NCwyNzIuMDMxTDE2Ny4wNywyMTAuMzIzYy0yMC4yOTMtNi43NjQtMzcuNzUzLTIwLjEtNDkuNjE5LTM3Ljg5OUw3MS42MywxMDMuNjkyDQoJCWwyNDAuNDg0LDgwLjE2MXY1Ni4xMTNMMzUyLjE5NCwyNzIuMDMxeiIvPg0KPC9nPg0KPGc+DQoJPHBhdGggc3R5bGU9ImZpbGw6I0U2NjQ2RTsiIGQ9Ik0yNjguNzQyLDEzNi45NTJMNy41LDQ3LjU4bDMwLjQ2OSw0NS43MDRjMTEuNDQ3LDE3LjE3MSwyOC4xMTQsMzAuMjA2LDQ3LjUzNywzNy4xNzgNCgkJbDIyNi42MDYsODEuMzQ2di0xNC4xNzlDMzEyLjExMywxNzAuMjExLDI5NC42ODMsMTQ1LjgyNywyNjguNzQyLDEzNi45NTJ6Ii8+DQoJPHBvbHlnb24gc3R5bGU9ImZpbGw6I0U2NjQ2RTsiIHBvaW50cz0iMzEuNTQ5LDI5Ni4wOCA3LjUsMzA0LjA5NiAzMS41NDksMjM5Ljk2NyA1NS41OTcsMzA0LjA5NiAJIi8+DQo8L2c+DQo8Zz4NCgk8cGF0aCBzdHlsZT0iZmlsbDojREM0NjU1OyIgZD0iTTIyMC41ODQsMzMzLjUzM2wtMjAuNjk3LDgyLjc4OGwyNi4wNzEtMTUuNjQzYzkuMTUtNS40OSwxNi41NDUtMTMuNDc2LDIxLjMxOC0yMy4wMjENCgkJbDE0LjM0MS0yOC42ODNjNC4xMzItOC4yNjMsMi42MDctMTguMjM5LTMuODMxLTI0Ljg2NWMtMC4xMzItMC4xMzYtMC4yNjQtMC4yNzItMC4zOTYtMC40MDgNCgkJQzI0NS40NzYsMzExLjQxNiwyMjQuNzM1LDMxNi45MywyMjAuNTg0LDMzMy41MzN6Ii8+DQoJPHBhdGggc3R5bGU9ImZpbGw6I0RDNDY1NTsiIGQ9Ik0zNzYuMjQyLDM2MC4yMDl2MTguNzgxYzAsOC41MDUsMy4zNzgsMTYuNjYxLDkuMzkyLDIyLjY3NWwxMy4yODEsMTMuMjgyDQoJCWM2LjAxNCw2LjAxMyw5LjM5MiwxNC4xNjksOS4zOTIsMjIuNjczdi03Ny40MTFjMC04Ljg1NC03LjE3OC0xNi4wMzItMTYuMDMyLTE2LjAzMmwwLDANCgkJQzM4My40MiwzNDQuMTc3LDM3Ni4yNDIsMzUxLjM1NCwzNzYuMjQyLDM2MC4yMDl6Ii8+DQo8L2c+DQo8cGF0aCBkPSJNNDg4LjQ2OCwxNTIuMzA2aC0xMi45MjZsLTQuNDQ0LTQuNDQ0Yy03LjQ3My03LjQ3My0xNy40MDktMTEuNTg4LTI3Ljk3Ny0xMS41ODhoLTkxLjA4NWwtMy41MTUtNC4wNzcNCgljLTIuNzA1LTMuMTM3LTcuNDQtMy40ODgtMTAuNTc4LTAuNzg0Yy0zLjEzNywyLjcwNS0zLjQ4OCw3LjQ0LTAuNzg0LDEwLjU3OGwyMy44MDcsMjcuNjE3YzIuMjk5LDIuNjY3LDQuOTE5LDQuOTgyLDcuNzc0LDYuOTE3DQoJdjc5LjQ3NGMwLDQuMTQyLDMuMzU4LDcuNSw3LjUsNy41czcuNS0zLjM1OCw3LjUtNy41di03My4zMzNjMi4zNTQsMC40MzUsNC43NTksMC42NzEsNy4xOTMsMC42NzFoOS4zNTZjNC4xNDIsMCw3LjUtMy4zNTgsNy41LTcuNQ0KCXMtMy4zNTgtNy41LTcuNS03LjVoLTkuMzU2Yy03LjE1MywwLTEzLjkzNS0zLjEwNy0xOC42MDUtOC41MjVsLTcuMzYxLTguNTM5aDc4LjE1NGM2LjU2MiwwLDEyLjczLDIuNTU1LDE3LjM3LDcuMTk1bDYuNjQxLDYuNjQxDQoJYzEuNDA2LDEuNDA2LDMuMzE0LDIuMTk3LDUuMzAzLDIuMTk3aDE2LjAzMmM0LjcwNSwwLDguNTMyLDMuODI4LDguNTMyLDguNTMydjguNTMyaC00MC41OTdjLTEyLjk3NiwwLTIzLjUzMiwxMC41NTctMjMuNTMyLDIzLjUzMg0KCXY4LjUzMmgtMC41MTZjLTkuMTI1LDAtMTYuNTQ4LTcuNDI0LTE2LjU0OC0xNi41NDhjMC00LjE0Mi0zLjM1OC03LjUtNy41LTcuNXMtNy41LDMuMzU4LTcuNSw3LjUNCgljMCwxMi43NzYsNy42MzgsMjMuNzk0LDE4LjU4MywyOC43NWMtMy4zNzksNi4xNC0zLjg2OSwxMy40OS0xLjIzNiwyMC4wN2wyMC42MDYsNTEuNTE1YzkuNzIsMjQuMzAyLDEuNjM0LDUxLjg5OS0xOS42NjQsNjcuMTEzDQoJbC0zLjI4OSwyLjM0OXYtMTcuNDljMC00LjE0Mi0zLjM1OC03LjUtNy41LTcuNXMtNy41LDMuMzU4LTcuNSw3LjV2NTQuMDM5bC05Ljg3LTkuODdjLTQuNjQtNC42NC03LjE5NS0xMC44MDktNy4xOTUtMTcuMzd2LTI2Ljc5OQ0KCWMwLTQuMTQyLTMuMzU4LTcuNS03LjUtNy41cy03LjUsMy4zNTgtNy41LDcuNXYyNC41NjRoLTE1LjU2OWMtMTAuMjMyLDAtMjAuMTYxLTIuMTA3LTI5LjUxMS02LjI2MmwtOC41NDgtMy43OTkNCgljLTMuNzg0LTEuNjgyLTguMjE3LDAuMDIyLTkuODk5LDMuODA3Yy0xLjY4MiwzLjc4NSwwLjAyMiw4LjIxOCwzLjgwOCw5LjlsOC41NDgsMy43OTljMTEuMjgsNS4wMTMsMjMuMjU4LDcuNTU1LDM1LjYwMyw3LjU1NQ0KCWgxNy42NzRjMS45MjUsNS42NjQsNS4xMjksMTAuODU3LDkuNDgzLDE1LjIxMWwxMy4yODIsMTMuMjgxYzQuNjQsNC42NCw3LjE5NSwxMC44MDksNy4xOTUsMTcuMzd2MTkuMjk5aC0xMi41NDENCgljLTQuMTQyLDAtNy41LDMuMzU4LTcuNSw3LjVzMy4zNTgsNy41LDcuNSw3LjVoMjQuMDQ4YzEuODc2LDAsMy42ODQtMC43MDMsNS4wNjctMS45NzFjMy4wMS0yLjc1OCw4LjA1MS02LjA0NSwxNC45NzQtNi4wNDUNCglzMTEuOTYzLDMuMjg4LDE0Ljk3Myw2LjA0NWMxLjQzOSwxLjMxOSwzLjI1NSwxLjk3MSw1LjA2NSwxLjk3MWMyLjAyOSwwLDQuMDUyLTAuODE5LDUuNTMxLTIuNDMzDQoJYzIuNzk5LTMuMDU0LDIuNTkyLTcuNzk4LTAuNDYyLTEwLjU5NmMtNy4wMjctNi40NC0xNS45NDQtOS45ODctMjUuMTA3LTkuOTg3Yy01Ljc0OSwwLTExLjM5OSwxLjQwMS0xNi41NDgsNC4wMzJ2LTY0LjgxOA0KCWwxMi4wMDgtOC41NzdjMjYuOTQtMTkuMjQzLDM3LjE2Ny01NC4xNTEsMjQuODcyLTg0Ljg4OWwtMjAuNjA2LTUxLjUxNWMtMS4wNjgtMi42NzEtMC43NTYtNS41NywwLjg1Ny03Ljk1Mg0KCWMxLjYxMy0yLjM4Myw0LjE4OC0zLjc0OSw3LjA2NS0zLjc0OWg0OC40NjVjNC4xNDIsMCw3LjUtMy4zNTgsNy41LTcuNXMtMy4zNTgtNy41LTcuNS03LjVoLTQwLjU5N3YtOC41MzINCgljMC00LjcwNSwzLjgyOC04LjUzMiw4LjUzMi04LjUzMmgzMi41ODF2MC41MTZjMCw0LjE0MiwzLjM1OCw3LjUsNy41LDcuNXM3LjUtMy4zNTgsNy41LTcuNXYtMC41MTZoMC41MTYNCgljNC4xNDIsMCw3LjUtMy4zNTgsNy41LTcuNXYtMTYuMDMyQzUxMiwxNjIuODYyLDUwMS40NDQsMTUyLjMwNiw0ODguNDY4LDE1Mi4zMDZ6Ii8+DQo8cGF0aCBkPSJNNDU1Ljk2OCwxNjcuODIyYzAtNC4xNDItMy4zNTgtNy41LTcuNS03LjVoLTAuMDhjLTQuMTQyLDAtNy40NiwzLjM1OC03LjQ2LDcuNXMzLjM5OCw3LjUsNy41NCw3LjUNCglTNDU1Ljk2OCwxNzEuOTY0LDQ1NS45NjgsMTY3LjgyMnoiLz4NCjxwYXRoIGQ9Ik0yODUuMDg4LDM1My4zNTFsLTE0LjE1Ni02LjI5MmMxLjUwNy0zLjYwOC0wLjAxMS03LjgxNS0zLjU2MS05LjU5Yy0zLjcwNS0xLjg1Mi04LjIxLTAuMzUxLTEwLjA2MiwzLjM1NGwtMTYuNzQxLDMzLjQ4Mg0KCWMtNC4xNDIsOC4yODMtMTAuNTI4LDE1LjE4LTE4LjQ3LDE5Ljk0NWwtMTAuNTQzLDYuMzI2bDE5LjY1Ny03OC42MjdjMS4wMDUtNC4wMTktMS40MzgtOC4wOTEtNS40NTctOS4wOTUNCgljLTQuMDE0LTEuMDAyLTguMDksMS40MzgtOS4wOTUsNS40NTdsLTIuNiwxMC4zOThjLTI1LjM3NiwwLjk4MS00NS43MjEsMjEuOTIxLTQ1LjcyMSw0Ny41MzNjMCwzNS42NDYtMjksNjQuNjQ1LTY0LjY0Niw2NC42NDUNCgljLTIxLjM3NCwwLTQwLjM1OS0xMC40MjktNTIuMTM0LTI2LjQ2MmM5LjI3LDUuOTQ2LDIwLjI4Nyw5LjM5NywzMi4wOTQsOS4zOTdjMzIuODY2LDAsNTkuNjA1LTI2LjczOSw1OS42MDUtNTkuNjA1di0xMi4wMjQNCgljMC00MC4wNjYsMzIuNTk2LTcyLjY2MSw3Mi42NjEtNzIuNjYxaDYuNjQ0YzYuNDYxLDMuODc2LDEzLjM2OCw3LjA3NiwyMC42Niw5LjUwN2wxMTQuNjE1LDM4LjIwNQ0KCWMwLjc4NywwLjI2MiwxLjU4NiwwLjM4NywyLjM3MywwLjM4N2MzLjE0LDAsNi4wNjYtMS45ODgsNy4xMTQtNS4xM2MxLjMxLTMuOTMtMC44MTQtOC4xNzctNC43NDQtOS40ODdsLTExNC42MTUtMzguMjA1DQoJYy0xNy45LTUuOTY3LTMzLjE1OS0xNy4yMzYtNDQuMTI1LTMyLjU5bC0xMC45OTgtMTUuMzk4bDg0LjgzNCwyOC4yNzhjMC43ODcsMC4yNjIsMS41ODYsMC4zODcsMi4zNzMsMC4zODcNCgljMy4xNCwwLDYuMDY2LTEuOTg4LDcuMTE0LTUuMTNjMS4zMS0zLjkyOS0wLjgxNC04LjE3Ny00Ljc0NC05LjQ4N2wtMTEzLjY4OS0zNy44OTZjLTE4LjE5NS02LjA2NS0zNC4xOTYtMTguMTExLTQ1LjA1Ni0zMy45MTgNCglsLTE1LjM3OS0yMi4zODVsMTQ1LjE2NCw1Mi4yNTljMy44OTgsMS40MDQsOC4xOTQtMC42MTksOS41OTctNC41MTZjMS40MDMtMy44OTctMC42MTktOC4xOTQtNC41MTYtOS41OTdsLTE3MC41NDktNjEuNA0KCWMtMTcuNzUxLTYuMzktMzMuMjkxLTE4LjU1NS00My43NTUtMzQuMjUyTDI2LjAyMyw2MS44NDNsMjQwLjI5MSw4Mi4yMDVjMjIuOTA4LDcuODM3LDM4LjI5OSwyOS4zNjksMzguMjk5LDUzLjU4djI3LjMyDQoJYzAsMTEuNzc2LDUuMTg5LDIyLjg1NSwxNC4yMzYsMzAuMzk1bDg0LjY1Niw3MC41NDdjMS40MDIsMS4xNjgsMy4xMDQsMS43MzksNC43OTcsMS43MzljMi4xNDksMCw0LjI4Mi0wLjkxOSw1Ljc2Ni0yLjY5OQ0KCWMyLjY1Mi0zLjE4MiwyLjIyMi03LjkxMS0wLjk2LTEwLjU2M2wtODQuNjU2LTcwLjU0N2MtNS42MTctNC42ODEtOC44MzktMTEuNTU5LTguODM5LTE4Ljg3MXYtMjcuMzINCgljMC0zMC42MjUtMTkuNDY4LTU3Ljg2LTQ4LjQ0My02Ny43NzNMOS45MjgsNDAuNDg0Yy0zLjA0LTEuMDQtNi40MDgtMC4wMjctOC4zNywyLjUyYy0xLjk2MSwyLjU0Ny0yLjA4MSw2LjA2MS0wLjI5OCw4LjczNg0KCWwzMC40OTYsNDUuNzQ0YzEyLjIzNCwxOC4zNTMsMzAuNDAyLDMyLjU3NCw1MS4xNTUsNDAuMDQ1bDEuMTcxLDAuNDIybDI3LjIyOSwzOS41OTZjMTIuNjk3LDE4LjQ4MSwzMS40MDQsMzIuNTY0LDUyLjY3NiwzOS42NTUNCglsNC45NTMsMS42NTFjMC4yMSwwLjQ5MywwLjQ3MiwwLjk3MSwwLjc5NiwxLjQyNWwyMS44OTksMzAuNjU4YzMuNzI5LDUuMjIsNy44OTMsMTAuMDIzLDEyLjQyMywxNC40DQoJYy00Mi43NDYsNS44MDgtNzUuOCw0Mi41NDItNzUuOCw4Ni44NTZ2MTIuMDI0YzAsMjQuNTk1LTIwLjAxLDQ0LjYwNS00NC42MDUsNDQuNjA1cy00NC42MDUtMjAuMDEtNDQuNjA1LTQ0LjYwNXYtNTcuNzMxDQoJbDE0LjE3Nyw0LjcyNmMwLjc3NywwLjI1OSwxLjU3OCwwLjM4NSwyLjM3MSwwLjM4NWMyLjAwNCwwLDMuOTY0LTAuODA0LDUuNDAxLTIuMjk2YzIuMDA2LTIuMDgyLDIuNjM3LTUuMTMxLDEuNjIyLTcuODM4DQoJbC0yNC4wNDgtNjQuMTI5Yy0xLjA5OC0yLjkyNy0zLjg5Ni00Ljg2Ny03LjAyMi00Ljg2N3MtNS45MjUsMS45MzktNy4wMjIsNC44NjdMMC40NzgsMzAxLjQ2Mg0KCWMtMS4wMTUsMi43MDctMC4zODQsNS43NTYsMS42MjIsNy44MzhjMi4wMDUsMi4wODIsNS4wMywyLjgyNSw3Ljc3MiwxLjkxMWwxNC4xNzctNC43MjZ2NjkuNzU2DQoJYzAsNDMuOTE3LDM1LjcyOSw3OS42NDUsNzkuNjQ2LDc5LjY0NXM3OS42NDUtMzUuNzI5LDc5LjY0NS03OS42NDVjMC0xNi4wMTEsMTEuNjEyLTI5LjM1MSwyNi44NTQtMzIuMDY2bC0xNy41ODIsNzAuMzI4DQoJYy0wLjQzNSwxLjczNy0wLjIzMywzLjU3MiwwLjU2OCw1LjE3M2wxOC42MjEsMzcuMjQzaC03LjkwNmMtNC4xNDIsMC03LjUsMy4zNTgtNy41LDcuNXMzLjM1OCw3LjUsNy41LDcuNWgyNC4wNDgNCgljMS44NzYsMCwzLjY4NC0wLjcwMyw1LjA2Ny0xLjk3YzMuMDEtMi43NTgsOC4wNTEtNi4wNDYsMTQuOTc0LTYuMDQ2czExLjk2NCwzLjI4OCwxNC45NzQsNi4wNDZjMS40NCwxLjMxOSwzLjI1NSwxLjk3LDUuMDY1LDEuOTcNCgljMi4wMjksMCw0LjA1My0wLjgxOSw1LjUzMi0yLjQzM2MyLjc5OC0zLjA1NCwyLjU5MS03Ljc5OC0wLjQ2My0xMC41OTdjLTcuMDI4LTYuNDQtMTUuOTQ1LTkuOTg2LTI1LjEwNy05Ljk4Ng0KCWMtNy4xODUsMC0xNC4yMTcsMi4xODItMjAuMzA3LDYuMjI4bC0xNy45NzUtMzUuOTUxbDIwLjExNC0xMi4wNjhjMTAuMzkyLTYuMjM1LDE4Ljc1LTE1LjI2LDI0LjE2OC0yNi4wOTlsMTAuMjU1LTIwLjUxNA0KCWwxNC43NTYsNi41NThjMC45OSwwLjQ0LDIuMDI0LDAuNjQ4LDMuMDQyLDAuNjQ4YzIuODczLDAsNS42MTUtMS42NjEsNi44NTctNC40NTZDMjkwLjU3NywzNTkuNDY1LDI4OC44NzMsMzU1LjAzMywyODUuMDg4LDM1My4zNTENCgl6IE0zMS41NDksMjg4LjU4Yy0wLjgwMSwwLTEuNjAyLDAuMTI4LTIuMzcyLDAuMzg1bC05LjEzNCwzLjA0NWwxMS41MDYtMzAuNjgybDExLjUwNiwzMC42ODJsLTkuMTM0LTMuMDQ1DQoJQzMzLjE1MSwyODguNzA4LDMyLjM0OSwyODguNTgsMzEuNTQ5LDI4OC41OHoiLz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K"
             alt="" width="30" height="30" class="d-inline-block align-text-top">
-          Noticias Kumara
+          Kumara News
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +42,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Noticias</a>
+              <a class="nav-link" aria-current="page" href="index.html">Noticias</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="hardware.html">Hardware</a>
@@ -42,7 +51,7 @@
               <a class="nav-link" href="avances.html">Avances</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="resenias.html">Reseñas</a>
+              <a class="nav-link active" href="resenias.html">Reseñas</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="suscripcion.html">Suscripción</a>
@@ -53,151 +62,95 @@
     </nav>
   </header>
 
-  <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true"
-        aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://www.gamelegends.it/wp-content/uploads/2021/01/Horizon-Forbidden-West.jpg"
-          class="d-block w-100" alt="Horizon Forbidden West screenshot en ps5">
+  <main>
+    <article class="noticia">
+      <h1>
+        Análisis HyperX Cloud Stinger Core Wireless: gran autonomía, poco peso y buen sonido
+      </h1>
+      <h2>
+        Les hablamos de los auriculares inalámbricos HyperX Cloud Stinger Core Wireless para PC, PS4 y PS5, unos auriculares con una gran autonomía, muy ligeros y con buen sonido.
+      </h2>
+      <div class="container">
+      <img
+        src="https://www.purepc.pl/image/news/2020/04/21_hyperx_cloud_stinger_core_i_core_wireless_sluchawki_z_audio_7_1_1_b.jpg"
+        alt="imagen de auriculares" class="img-fluid">
       </div>
-      <div class="carousel-item">
-        <img src="https://i.ytimg.com/vi/Y3M8d2x6UXk/maxresdefault.jpg" class="d-block w-100" alt="Frostpunk screenshot ingame">
+      <p>
+        Los auriculares se han convertido en los últimos años en un complemento ideal para jugar sin importar si
+        estamos en nuestra consola favorita o en nuestro PC gracias a que nos permite disfrutar de nuestros
+        juegos favoritos sin molestar a los demás además de contar con un sonido envolvente bastante bueno que
+        ofrece una experiencia más satisfactoria que los altavoces del televisor, monitor o unos altavoces 2.0
+        para nuestro escritorio.
+      </p>
+      <p>
+        Hoy voy a hablales de otros auriculares para jugar, los HyperX Cloud Stinger Core Wireless, un modelo
+        inalámbrico para PC, PS4 y PS5 de los conocidos Cloud Stinger de esta misma marca que apuesta por un
+        diseño cómodo y ligero, una buena calidad de sonido y una gran autonomía para jugar durante horas y
+        horas sin tener que preocuparnos por la batería.
+      </p>
+      <h3>
+        Especificaciones técnicas
+      </h3>
+      <h4>
+        Auriculares
+      </h4>
+      <ul>
+        <li>Controlador: Dinámico de 40mm, con imanes de neodimio
+        </li>
+        <li>Tipo: Cerrados
+        </li>
+        <li>Respuesta de frecuencia 20-20kHz
+        </li>
+        <li>Impedancia: 16 ohmios
+        </li>
+        <li>Nivel de presión acústica: 95,5 dBSPL, 1 mW a 1 kHz
+        </li>
+        <li>Distorsión armónica total: ≦2%
+        </li>
+        <li>Duración de la batería: Hasta 17 horas
+        </li>
+        <li>Rango inalámbrico: 2,4 Ghz – Hasta 12 metros (campo abierto)
+        </li>
+      </ul>
+      <h4>
+        Micrófono
+      </h4>
+      <ul>
+        <li>Elemento: Micrófono de condensador electret.
+        </li>
+        <li>Patrón polar: Unidireccional, cancelación de ruido
+        </li>
+        <li>Respuesta de frecuencia: 50 Hz-18 kHz.
+        </li>
+        <li>Sensibilidad: -40 dBV (1V/Pa a 1kHz).
+        </li>
+      </ul>
+      <div class="container">
+        <img src="https://tech.icrewplay.com/wp-content/uploads/2020/07/P1023721-scaled.jpg" alt="imagen de auriculares"
+        class="img-fluid">
       </div>
-      <div class="carousel-item">
-        <img src="https://elintransigente.com/wp-content/uploads/2020/11/Cyberpunk-2077-1.jpg" class="d-block w-100"
-          alt="Cyberpunk wallpaper personaje principal">
-      </div>
-      <div class="carousel-item">
-        <img src="https://www.zelda.com/breath-of-the-wild/assets/media/wallpapers/desktop-1.jpg" class="d-block w-100"
-          alt="Zelda breath of the wild wallpaper">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Anterior</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Siguiente</span>
-    </button>
-  </div>
-
-  <hr>
-
-  <main data-aos="fade-up">
-
-    <section class="calendario">
-
-      <h1 class="tituloCalendario">Próximos Lanzamientos</h1>
-
-      <div class="slideHorizontal">
-
-        <div class="slideContainer">
-
-          <div class="item">
-            <img src="Imagenes/LN2.png" class="img-fluid"
-              alt="Little nightmares 2" title="Little nightmares 2">
-          </div>
-          <div class="item">
-            <img src="Imagenes/P5strikers.png" class="img-fluid"
-              alt="Persona 5: Strikers" title="Persona 5: Strikers">
-          </div>
-          <div class="item">
-            <img
-              src="Imagenes/MHrise.png"
-              class="img-fluid" alt="Monster Hunters: Rise" title="Monster Hunters: Rise">
-          </div>
-          <div class="item">
-            <img src="Imagenes/IT2.png" class="img-fluid"
-              alt="It Takes Two" title="It Takes Two">
-          </div>
-          <div class="item">
-            <img src="Imagenes/RetPS5.png" class="img-fluid"
-              alt="Returnal ps5" title="Returnal ps5">
-          </div>
-          <div class="item">
-            <img src="Imagenes/NPokS.png" class="img-fluid"
-              alt="New Pokemon Snap" title="New Pokemon Snap">
-          </div>
-          <div class="item">
-            <img src="Imagenes/MGolfSR.png"
-              class="img-fluid" alt="Mario Golf Super Rush" title="Mario Golf Super Rush">
-          </div>
-          <div class="item">
-            <img
-              src="Imagenes/MHStor2.png"
-              class="img-fluid" alt="Monster Hunter: Stories 2" title="Monster Hunter: Stories 2">
-          </div>
-
-        </div>
-
-      </div>
-      
-    </section>
-
-    <hr>
-    
-    <section class="articulos">
-      <h2 class="tituloArticulos">Noticias Videojuegos</h2>
-      <div class="container-fluid">
-        <div class="row gy-5">
-          <div class="col-12 col-md-6 col-lg-3">
-            <div class="card container-fluid" style="width: 18rem;">
-              <img src="https://www.gamelegends.it/wp-content/uploads/2021/01/Horizon-Forbidden-West.jpg"
-                class="card-img-top" alt="Horizon Forbidden West">
-              <div class="card-body">
-                <a href="n1Noticias.html">
-                  <p class="card-text">Guerrilla promete que su próximo lanzamiento, Horizon Forbidden West, va a verse increíble en ps4</p>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3">
-            <div class="card container-fluid" style="width: 18rem;">
-              <img src="https://i.ytimg.com/vi/Y3M8d2x6UXk/maxresdefault.jpg" class="card-img-top" alt="Frostpunk">
-              <div class="card-body">
-                <a href="n2Noticias.html">
-                  <p class="card-text">Frostpunk, juego de simulación en tiempo real ya está disponible gratis en Epic Store</p>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3">
-            <div class="card container-fluid" style="width: 18rem;">
-              <img src="https://elintransigente.com/wp-content/uploads/2020/11/Cyberpunk-2077-1.jpg"
-                class="card-img-top" alt="Cyberpunk 2077">
-              <div class="card-body">
-                <a href="n3Noticias.html">
-                  <p class="card-text">El reconocido juego Cyberpunk 2077 podrá jugarse en los automóviles Tesla</p>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3">
-            <div class="card container-fluid" style="width: 18rem;">
-              <img src="https://www.zelda.com/breath-of-the-wild/assets/media/wallpapers/desktop-1.jpg"
-                class="card-img-top img-fluid" alt="The Legend of Zelda: Breath of the Wild">
-              <div class="card-body">
-                <a href="n4Noticias.html">
-                  <p class="card-text">Rumores de que The Legend of Zelda: Breath of the Wild 2 llegará en 2022</p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      <h4>
+        Buen sonido envolvente
+      </h4>
+      <p>
+        Estamos ante un audio bastante equilibrado y de calidad proporcionado por unos altavoces dinámicos de 40
+        milímetros con imanes de neodimio y una respuesta de frecuencia de 20Hz a 20 kHz que se comporta bien en
+        las frecuencias más habituales, sobre todo en los medios. Los graves también son perfectamente audibles
+        y los auriculares nos ofrecen una buena respuesta en todos ellos aunque les faltan un poco de pegada y
+        en cuanto a los agudos si hemos detectado un poco de fallo en las frecuencias más altas, algo bastante
+        normal en su rango de precio y que pasará desapercibido por la mayoría de vosotros, de hecho, apenas se
+        nota en los videojuegos aunque sí un poco más a la hora de reproducir música.
+      </p>
+      <p>
+        También podemos disfrutar de sonido envolvente 7.1 gracias a estos auriculares ofreciéndonos una
+        localización espacial bastante buena, precisa y sorprendente sobre todo para unos auriculares
+        inalámbricos con sonido envolvente de este precio. Como siempre, el sonido envolvente ayudará a la
+        inmersión de nuestros juegos favoritos (sobre todo en títulos de terror o grandes aventuras) y también
+        nos dará cierta "ventaja" en shooters competitivos al poder localizar con mayor facilidad la posición de
+        los enemigos por el sonido.
+      </p>
+    </article>
   </main>
-
-
 
   <footer class="footer">
     <hr>
@@ -239,10 +192,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
   </script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
 </body>
+
+</html>
 
 </html>
